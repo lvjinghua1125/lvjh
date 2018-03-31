@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Sun Feb 25 19:44:46 CST 2018
+org.eclipse.jst.jee.server\:/binary\:D\:\\mavenRepository\\org\\springframework\\spring-web\\4.1.3.RELEASE\\spring-web-4.1.3.RELEASE.jar=WEB-INF/lib/spring-web-4.1.3.RELEASE.jar
+org.eclipse.jst.j2ee.server\:taotao-manage-pojo=WEB-INF/lib/taotao-manage-pojo-1.0.0.jar
+org.eclipse.jst.j2ee.server\:taotao-common=WEB-INF/lib/taotao-common-1.0.0.jar

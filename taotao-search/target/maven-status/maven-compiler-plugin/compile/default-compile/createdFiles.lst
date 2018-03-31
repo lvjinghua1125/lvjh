@@ -1,0 +1,6 @@
+com\taotao\search\mq\handler\ItemMQHandler.class
+com\taotao\search\controller\ItemSearchController.class
+com\taotao\search\bean\PageInfo.class
+com\taotao\search\bean\Item.class
+com\taotao\search\service\ItemSearchService.class
+com\taotao\search\service\ItemService.class
