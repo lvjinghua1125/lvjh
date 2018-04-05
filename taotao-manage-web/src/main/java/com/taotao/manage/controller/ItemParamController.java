@@ -1,18 +1,18 @@
 package com.taotao.manage.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+        import org.springframework.beans.factory.annotation.Autowired;
+        import org.springframework.http.HttpStatus;
+        import org.springframework.http.ResponseEntity;
+        import org.springframework.stereotype.Controller;
+        import org.springframework.web.bind.annotation.PathVariable;
+        import org.springframework.web.bind.annotation.RequestMapping;
+        import org.springframework.web.bind.annotation.RequestMethod;
+        import org.springframework.web.bind.annotation.RequestParam;
 
-import com.github.pagehelper.PageInfo;
-import com.taotao.common.bean.EasyUIResult;
-import com.taotao.manage.pojo.ItemParam;
-import com.taotao.manage.service.ItemParamService;
+        import com.github.pagehelper.PageInfo;
+        import com.taotao.common.bean.EasyUIResult;
+        import com.taotao.manage.pojo.ItemParam;
+        import com.taotao.manage.service.ItemParamService;
 
 @RequestMapping("item/param")
 @Controller
@@ -22,7 +22,7 @@ public class ItemParamController {
     private ItemParamService itemParamService;
 
     /**
-     * 根据类目id查找模板
+     * 根据类目的id查找模板
      *
      * @param itemCatId
      * @return
@@ -51,7 +51,7 @@ public class ItemParamController {
      */
     @RequestMapping(value = "{itemCatId}", method = RequestMethod.POST)
     public ResponseEntity<Void> saveItemParam(@PathVariable("itemCatId") Long itemCatId,
-            @RequestParam("paramData") String paramData) {
+                                              @RequestParam("paramData") String paramData) {
         try {
             ItemParam param = new ItemParam();
             param.setItemCatId(itemCatId);
@@ -66,7 +66,6 @@ public class ItemParamController {
 
     /**
      * 查询模板列表
-     * 
      * @param page
      * @param rows
      * @return
