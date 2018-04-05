@@ -34,7 +34,7 @@ public class ItemParamController {
             param.setItemCatId(itemCatId);
             ItemParam itemParam = this.itemParamService.queryOne(param);
             if (null == itemParam) {
-                System.out.println("itemParam is null");
+                System.out.println("itemParam is null now");
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
             }
             return ResponseEntity.ok(itemParam);
