@@ -36,6 +36,7 @@ public class ItemParamController {
             if (null == itemParam) {
                 System.out.println("this is itemParam");
                 System.out.println("you are a sb, right?");
+                System.out.println("you are a sb too");
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
             }
             return ResponseEntity.ok(itemParam);
