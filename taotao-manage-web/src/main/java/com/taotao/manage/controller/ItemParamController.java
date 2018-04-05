@@ -35,6 +35,7 @@ public class ItemParamController {
             ItemParam itemParam = this.itemParamService.queryOne(param);
             if (null == itemParam) {
                 System.out.println("this is itemParam");
+                System.out.println("you are a sb, right?");
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
             }
             return ResponseEntity.ok(itemParam);
