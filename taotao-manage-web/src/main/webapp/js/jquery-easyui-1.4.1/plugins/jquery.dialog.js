@@ -67,8 +67,8 @@ $(_2).window("resize");
 if(_3.closed){
 _4.hide();
 }
-};
-function _a(_b,_c){
+}
+    function _a(_b,_c){
 var t=$(_b);
 var _d=t.dialog("options");
 var _e=_d.noheader;
@@ -85,8 +85,8 @@ if(_f){
 var cc=t.panel("panel");
 _f.css({width:cc._outerWidth(),height:cc._outerHeight()});
 }
-};
-$.fn.dialog=function(_10,_11){
+}
+    $.fn.dialog=function(_10,_11){
 if(typeof _10=="string"){
 var _12=$.fn.dialog.methods[_10];
 if(_12){

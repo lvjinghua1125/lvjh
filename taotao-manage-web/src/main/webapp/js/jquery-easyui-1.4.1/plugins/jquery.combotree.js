@@ -49,8 +49,8 @@ _4.onClick.call(this,_b);
 _e(_2);
 _4.onCheck.call(this,_c,_d);
 }}));
-};
-function _e(_f){
+}
+    function _e(_f){
 var _10=$.data(_f,"combotree");
 var _11=_10.options;
 var _12=_10.tree;
@@ -69,8 +69,8 @@ ss.push(_14.text);
 }
 }
 $(_f).combo("setValues",vv).combo("setText",ss.join(_11.separator));
-};
-function _15(_16,_17){
+}
+    function _15(_16,_17){
 var _18=$.data(_16,"combotree");
 var _19=_18.options;
 var _1a=_18.tree;
@@ -93,8 +93,8 @@ _1a.tree("select",_1e.target);
 _1b.onCheck=_1c;
 _1b.onSelect=_1d;
 _e(_16);
-};
-$.fn.combotree=function(_1f,_20){
+}
+    $.fn.combotree=function(_1f,_20){
 if(typeof _1f=="string"){
 var _21=$.fn.combotree.methods[_1f];
 if(_21){

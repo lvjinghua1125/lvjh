@@ -10,8 +10,8 @@
 (function($){
 function _1(_2){
 $(_2).addClass("validatebox-text");
-};
-function _3(_4){
+}
+    function _3(_4){
 var _5=$.data(_4,"validatebox");
 _5.validating=false;
 if(_5.timer){
@@ -20,8 +20,8 @@ clearTimeout(_5.timer);
 $(_4).tooltip("destroy");
 $(_4).unbind();
 $(_4).remove();
-};
-function _6(_7){
+}
+    function _6(_7){
 var _8=$.data(_7,"validatebox").options;
 var _9=$(_7);
 _9.unbind(".validatebox");
@@ -31,8 +31,8 @@ return;
 for(var _a in _8.events){
 $(_7).bind(_a+".validatebox",{target:_7},_8.events[_a]);
 }
-};
-function _b(e){
+}
+    function _b(e){
 var _c=e.data.target;
 var _d=$.data(_c,"validatebox");
 var _e=$(_c);
@@ -57,8 +57,8 @@ _f(_c);
 setTimeout(arguments.callee,200);
 }
 })();
-};
-function _10(e){
+}
+    function _10(e){
 var _11=e.data.target;
 var _12=$.data(_11,"validatebox");
 if(_12.timer){
@@ -67,38 +67,38 @@ _12.timer=undefined;
 }
 _12.validating=false;
 _13(_11);
-};
-function _14(e){
+}
+    function _14(e){
 var _15=e.data.target;
 if($(_15).hasClass("validatebox-invalid")){
 _16(_15);
 }
-};
-function _17(e){
+}
+    function _17(e){
 var _18=e.data.target;
 var _19=$.data(_18,"validatebox");
 if(!_19.validating){
 _13(_18);
 }
-};
-function _16(_1a){
+}
+    function _16(_1a){
 var _1b=$.data(_1a,"validatebox");
 var _1c=_1b.options;
 $(_1a).tooltip($.extend({},_1c.tipOptions,{content:_1b.message,position:_1c.tipPosition,deltaX:_1c.deltaX})).tooltip("show");
 _1b.tip=true;
-};
-function _f(_1d){
+}
+    function _f(_1d){
 var _1e=$.data(_1d,"validatebox");
 if(_1e&&_1e.tip){
 $(_1d).tooltip("reposition");
 }
-};
-function _13(_1f){
+}
+    function _13(_1f){
 var _20=$.data(_1f,"validatebox");
 _20.tip=false;
 $(_1f).tooltip("hide");
-};
-function _21(_22){
+}
+    function _21(_22){
 var _23=$.data(_22,"validatebox");
 var _24=_23.options;
 var box=$(_22);
@@ -108,8 +108,8 @@ _24.onValidate.call(_22,_25);
 return _25;
 function _27(msg){
 _23.message=msg;
-};
-function _28(_29,_2a){
+}
+    function _28(_29,_2a){
 var _2b=box.val();
 var _2c=/([a-zA-Z_]+)(.*)/.exec(_29);
 var _2d=_24.rules[_2c[1]];
@@ -131,8 +131,8 @@ return false;
 }
 }
 return true;
-};
-function _26(){
+}
+    function _26(){
 box.removeClass("validatebox-invalid");
 _13(_22);
 if(_24.novalidate||box.is(":disabled")){
@@ -171,9 +171,9 @@ return false;
 }
 }
 return true;
-};
-};
-function _32(_33,_34){
+}
+}
+    function _32(_33,_34){
 var _35=$.data(_33,"validatebox").options;
 if(_34!=undefined){
 _35.novalidate=_34;
@@ -184,8 +184,8 @@ _13(_33);
 }
 _21(_33);
 _6(_33);
-};
-$.fn.validatebox=function(_36,_37){
+}
+    $.fn.validatebox=function(_36,_37){
 if(typeof _36=="string"){
 return $.fn.validatebox.methods[_36](this,_37);
 }

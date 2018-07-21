@@ -10,8 +10,8 @@
 (function($){
 function _1(_2){
 $(_2).addClass("tooltip-f");
-};
-function _3(_4){
+}
+    function _3(_4){
 var _5=$.data(_4,"tooltip").options;
 $(_4).unbind(".tooltip").bind(_5.showEvent+".tooltip",function(e){
 $(_4).tooltip("show",e);
@@ -24,8 +24,8 @@ _5.trackMouseY=e.pageY;
 $(_4).tooltip("reposition");
 }
 });
-};
-function _6(_7){
+}
+    function _6(_7){
 var _8=$.data(_7,"tooltip");
 if(_8.showTimer){
 clearTimeout(_8.showTimer);
@@ -35,8 +35,8 @@ if(_8.hideTimer){
 clearTimeout(_8.hideTimer);
 _8.hideTimer=null;
 }
-};
-function _9(_a){
+}
+    function _9(_a){
 var _b=$.data(_a,"tooltip");
 if(!_b||!_b.tip){
 return;
@@ -106,9 +106,9 @@ top+=t._outerHeight()+12+(_c.trackMouse?12:0);
 break;
 }
 return {left:_12,top:top};
-};
-};
-function _13(_14,e){
+}
+}
+    function _13(_14,e){
 var _15=$.data(_14,"tooltip");
 var _16=_15.options;
 var tip=_15.tip;
@@ -129,8 +129,8 @@ _18.add(_19).css({borderTopColor:"",borderBottomColor:"",borderLeftColor:"",bord
 _18.css(bc,tip.css(bc));
 _19.css(bc,tip.css("backgroundColor"));
 },_16.showDelay);
-};
-function _1a(_1b,e){
+}
+    function _1a(_1b,e){
 var _1c=$.data(_1b,"tooltip");
 if(_1c&&_1c.tip){
 _6(_1b);
@@ -139,8 +139,8 @@ _1c.tip.hide();
 _1c.options.onHide.call(_1b,e);
 },_1c.options.hideDelay);
 }
-};
-function _17(_1d,_1e){
+}
+    function _17(_1d,_1e){
 var _1f=$.data(_1d,"tooltip");
 var _20=_1f.options;
 if(_1e){
@@ -152,8 +152,8 @@ return;
 var cc=typeof _20.content=="function"?_20.content.call(_1d):_20.content;
 _1f.tip.children(".tooltip-content").html(cc);
 _20.onUpdate.call(_1d,cc);
-};
-function _21(_22){
+}
+    function _21(_22){
 var _23=$.data(_22,"tooltip");
 if(_23){
 _6(_22);
@@ -168,8 +168,8 @@ $.removeData(_22,"tooltip");
 $(_22).unbind(".tooltip").removeClass("tooltip-f");
 _24.onDestroy.call(_22);
 }
-};
-$.fn.tooltip=function(_25,_26){
+}
+    $.fn.tooltip=function(_25,_26){
 if(typeof _25=="string"){
 return $.fn.tooltip.methods[_25](this,_26);
 }

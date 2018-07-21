@@ -52,8 +52,8 @@ _6.onClickCell.call(_4,_a,_b,_c);
 _2(this);
 return _6.loadFilter.call(this,_e);
 }}));
-};
-function _2(_f){
+}
+    function _2(_f){
 var t=$(_f);
 if(!t.length){
 return;
@@ -67,8 +67,8 @@ t.datagrid("endEdit",_11);
 t.datagrid("cancelEdit",_11);
 }
 });
-};
-$.fn.propertygrid=function(_12,_13){
+}
+    $.fn.propertygrid=function(_12,_13){
 if(typeof _12=="string"){
 var _14=$.fn.propertygrid.methods[_12];
 if(_14){
@@ -206,13 +206,13 @@ return _3d;
 }
 }
 return null;
-};
-function _35(){
+}
+        function _35(){
 if(!$("#datagrid-group-style").length){
 $("head").append("<style id=\"datagrid-group-style\">"+".datagrid-group{height:25px;overflow:hidden;font-weight:bold;border-bottom:1px solid #ccc;}"+"</style>");
 }
-};
-}});
+}
+    }});
 $.extend($.fn.datagrid.methods,{expandGroup:function(jq,_3e){
 return jq.each(function(){
 var _3f=$.data(this,"datagrid").dc.view;
@@ -287,8 +287,8 @@ var _55=_54?1:2;
 var _56=_4f.finder.getTr(_4c,_53-1,"body",_55);
 var tr=_4f.finder.getTr(_4c,_53,"body",_55);
 tr.insertAfter(_56);
-};
-},updateRow:function(_57,_58,row){
+}
+    },updateRow:function(_57,_58,row){
 var _59=$.data(_57,"datagrid").options;
 $.fn.datagrid.defaults.view.updateRow.call(this,_57,_58,row);
 var tb=_59.finder.getTr(_57,_58,"body",2).closest("table.datagrid-btable");

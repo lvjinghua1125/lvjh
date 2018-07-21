@@ -55,8 +55,8 @@ if(!_4.multiple){
 $(_2).combo("hidePanel");
 }
 _4.onClickRow.call(this,_14,row);
-};
-function _10(){
+}
+    function _10(){
 var _15=_5.datagrid("getSelections");
 var vv=[],ss=[];
 for(var i=0;i<_15.length;i++){
@@ -71,9 +71,9 @@ $(_2).combo("setValues",vv);
 if(!_3.remainText){
 $(_2).combo("setText",ss.join(_4.separator));
 }
-};
-};
-function nav(_16,dir){
+}
+}
+    function nav(_16,dir){
 var _17=$.data(_16,"combogrid");
 var _18=_17.options;
 var _19=_17.grid;
@@ -103,8 +103,8 @@ if(_18.selectOnNavigation){
 _17.remainText=false;
 _19.datagrid("selectRow",_1b);
 }
-};
-function _1c(_1d,_1e,_1f){
+}
+    function _1c(_1d,_1e,_1f){
 var _20=$.data(_1d,"combogrid");
 var _21=_20.options;
 var _22=_20.grid;
@@ -137,8 +137,8 @@ if($(_1d).combo("getText")!=s){
 $(_1d).combo("setText",s);
 }
 }
-};
-function _28(_29,q){
+}
+    function _28(_29,q){
 var _2a=$.data(_29,"combogrid");
 var _2b=_2a.options;
 var _2c=_2a.grid;
@@ -173,8 +173,8 @@ _2c.datagrid("highlightRow",i);
 }
 });
 }
-};
-function _2e(_2f){
+}
+    function _2e(_2f){
 var _30=$.data(_2f,"combogrid");
 var _31=_30.options;
 var _32=_30.grid;
@@ -200,8 +200,8 @@ $(_2f).combogrid("setValues",vv);
 if(!_31.multiple){
 $(_2f).combogrid("hidePanel");
 }
-};
-$.fn.combogrid=function(_34,_35){
+}
+    $.fn.combogrid=function(_34,_35){
 if(typeof _34=="string"){
 var _36=$.fn.combogrid.methods[_34];
 if(_36){

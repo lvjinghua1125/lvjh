@@ -33,8 +33,8 @@ _6.attr("disabled","disabled");
 _6.removeAttr("disabled");
 }
 }
-};
-$.fn.filebox=function(_8,_9){
+}
+    $.fn.filebox=function(_8,_9){
 if(typeof _8=="string"){
 var _a=$.fn.filebox.methods[_8];
 if(_a){

@@ -126,10 +126,10 @@ public class PicUploadController {
                 + new DateTime(nowDate).toString("dd");
         File file = new File(fileFolder);
         if (!file.isDirectory()) {
-            // 如果目录不存在，则创建目录
+            // 如果目录不存在的，则创建目录
             file.mkdirs();
         }
-        // 生成新的文件名
+        // 生成新的文件名,用时间形式
         String fileName = new DateTime(nowDate).toString("yyyyMMddhhmmssSSSS")
                 + RandomUtils.nextInt(100, 9999) + "." + StringUtils.substringAfterLast(sourceFileName, ".");
         return fileFolder + File.separator + fileName;

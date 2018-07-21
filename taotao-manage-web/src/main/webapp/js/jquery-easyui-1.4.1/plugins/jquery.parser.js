@@ -201,8 +201,8 @@ $("html").removeClass("panel-fit");
 }
 return false;
 }
-};
-function _18(_1c,_1d,_1e,_1f){
+}
+    function _18(_1c,_1d,_1e,_1f){
 var t=$(_1c);
 var p=_1d;
 var p1=p.substr(0,1).toUpperCase()+p.substr(1);
@@ -224,8 +224,8 @@ t._size("min"+p1,min);
 t._size("max"+p1,max);
 }
 return _20||_1f.fit;
-};
-function _17(_21,_22,_23){
+}
+    function _17(_21,_22,_23){
 var t=$(_21);
 if(_23==undefined){
 _23=parseInt(_21.style[_22]);
@@ -255,8 +255,8 @@ return t.outerWidth()-t.width();
 }else{
 return t.outerHeight()-t.height();
 }
-};
-};
+}
+}
 };
 })(jQuery);
 (function($){
@@ -284,8 +284,8 @@ _29(e,"mousedown");
 if($.fn.draggable.isDragging||$.fn.resizable.isResizing){
 e.preventDefault();
 }
-};
-function _2a(e){
+}
+    function _2a(e){
 if(e.touches.length!=1){
 return;
 }
@@ -296,8 +296,8 @@ _29(e,"mousemove");
 if($.fn.draggable.isDragging||$.fn.resizable.isResizing){
 e.preventDefault();
 }
-};
-function _2b(e){
+}
+    function _2b(e){
 if(_25){
 clearTimeout(_25);
 }
@@ -305,15 +305,15 @@ _29(e,"mouseup");
 if($.fn.draggable.isDragging||$.fn.resizable.isResizing){
 e.preventDefault();
 }
-};
-function _29(e,_2c,_2d){
+}
+    function _29(e,_2c,_2d){
 var _2e=new $.Event(_2c);
 _2e.pageX=e.changedTouches[0].pageX;
 _2e.pageY=e.changedTouches[0].pageY;
 _2e.which=_2d||1;
 $(e.target).trigger(_2e);
-};
-if(document.addEventListener){
+}
+    if(document.addEventListener){
 document.addEventListener("touchstart",_28,true);
 document.addEventListener("touchmove",_2a,true);
 document.addEventListener("touchend",_2b,true);

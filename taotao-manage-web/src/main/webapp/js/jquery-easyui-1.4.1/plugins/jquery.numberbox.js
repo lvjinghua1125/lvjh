@@ -19,16 +19,16 @@ _3.numberbox.addClass("numberbox");
 var _5=_4.parser.call(_2,_4.value);
 var _6=_4.formatter.call(_2,_5);
 $(_2).numberbox("initValue",_5).numberbox("setText",_6);
-};
-function _7(_8,_9){
+}
+    function _7(_8,_9){
 var _a=$.data(_8,"numberbox");
 var _b=_a.options;
 var _9=_b.parser.call(_8,_9);
 var _c=_b.formatter.call(_8,_9);
 _b.value=_9;
 $(_8).textbox("setValue",_9).textbox("setText",_c);
-};
-$.fn.numberbox=function(_d,_e){
+}
+    $.fn.numberbox=function(_d,_e){
 if(typeof _d=="string"){
 var _f=$.fn.numberbox.methods[_d];
 if(_f){

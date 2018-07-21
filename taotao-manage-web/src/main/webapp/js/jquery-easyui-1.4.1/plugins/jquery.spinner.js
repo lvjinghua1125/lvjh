@@ -22,8 +22,8 @@ _7.append("<a href=\"javascript:void(0)\" class=\"spinner-arrow-down\" tabindex=
 $(_2).attr("spinnerName",$(_2).attr("textboxName"));
 _3.spinner=$(_2).next();
 _3.spinner.addClass("spinner");
-};
-function _6(e){
+}
+    function _6(e){
 var _8=e.data.target;
 var _9=$(_8).spinner("options");
 var up=$(e.target).closest("a.spinner-arrow-up");
@@ -38,8 +38,8 @@ _9.spin.call(_8,true);
 _9.onSpinDown.call(_8);
 $(_8).spinner("validate");
 }
-};
-$.fn.spinner=function(_b,_c){
+}
+    $.fn.spinner=function(_b,_c){
 if(typeof _b=="string"){
 var _d=$.fn.spinner.methods[_b];
 if(_d){

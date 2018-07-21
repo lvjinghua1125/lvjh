@@ -44,8 +44,8 @@ _7(el,_2,_3);
 },_4);
 }
 });
-};
-function _7(el,_8,_9){
+}
+    function _7(el,_8,_9){
 if(el.locked==true){
 return;
 }
@@ -71,8 +71,8 @@ break;
 setTimeout(function(){
 $(el).window("destroy");
 },_9);
-};
-function _b(_c){
+}
+    function _b(_c){
 var _d=$.extend({},$.fn.window.defaults,{collapsible:false,minimizable:false,maximizable:false,shadow:false,draggable:false,resizable:false,closed:true,style:{left:"",top:"",right:0,zIndex:$.fn.window.defaults.zIndex++,bottom:-document.body.scrollTop-document.documentElement.scrollTop},onBeforeOpen:function(){
 _1(this,_d.showType,_d.showSpeed,_d.timeout);
 return false;
@@ -86,8 +86,8 @@ _e.window(_d);
 _e.window("window").css(_d.style);
 _e.window("open");
 return _e;
-};
-function _f(_10,_11,_12){
+}
+    function _f(_10,_11,_12){
 var win=$("<div class=\"messager-body\"></div>").appendTo("body");
 win.append(_11);
 if(_12){
@@ -104,8 +104,8 @@ win.window("destroy");
 win.window("window").addClass("messager-window");
 win.children("div.messager-button").children("a:first").focus();
 return win;
-};
-$.messager={show:function(_14){
+}
+    $.messager={show:function(_14){
 return _b(_14);
 },alert:function(_15,msg,_16,fn){
 var _17="<div>"+msg+"</div>";

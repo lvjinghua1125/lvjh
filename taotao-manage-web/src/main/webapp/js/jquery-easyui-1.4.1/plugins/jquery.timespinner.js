@@ -21,8 +21,8 @@ _3=s.text.length;
 }
 }
 return _3;
-};
-function _5(_6,_7,_8){
+}
+    function _5(_6,_7,_8){
 if(_6.selectionStart){
 _6.setSelectionRange(_7,_8);
 }else{
@@ -34,14 +34,14 @@ _9.moveStart("character",_7);
 _9.select();
 }
 }
-};
-function _a(_b){
+}
+    function _a(_b){
 var _c=$.data(_b,"timespinner").options;
 $(_b).addClass("timespinner-f").spinner(_c);
 var _d=_c.formatter.call(_b,_c.parser.call(_b,_c.value));
 $(_b).timespinner("initValue",_d);
-};
-function _e(e){
+}
+    function _e(e){
 var _f=e.data.target;
 var _10=$.data(_f,"timespinner").options;
 var _11=_1(this);
@@ -52,8 +52,8 @@ _13(_f,i);
 return;
 }
 }
-};
-function _13(_14,_15){
+}
+    function _13(_14,_15){
 var _16=$.data(_14,"timespinner").options;
 if(_15!=undefined){
 _16.highlight=_15;
@@ -64,14 +64,14 @@ var tb=$(_14).timespinner("textbox");
 _5(tb[0],_17[0],_17[1]);
 tb.focus();
 }
-};
-function _18(_19,_1a){
+}
+    function _18(_19,_1a){
 var _1b=$.data(_19,"timespinner").options;
 var _1a=_1b.parser.call(_19,_1a);
 var _1c=_1b.formatter.call(_19,_1a);
 $(_19).spinner("setValue",_1c);
-};
-function _1d(_1e,_1f){
+}
+    function _1d(_1e,_1f){
 var _20=$.data(_1e,"timespinner").options;
 var s=$(_1e).timespinner("getValue");
 var _21=_20.selections[_20.highlight];
@@ -81,8 +81,8 @@ var s3=s.substring(_21[1]);
 var v=s1+((parseInt(s2)||0)+_20.increment*(_1f?-1:1))+s3;
 $(_1e).timespinner("setValue",v);
 _13(_1e);
-};
-$.fn.timespinner=function(_22,_23){
+}
+    $.fn.timespinner=function(_22,_23){
 if(typeof _22=="string"){
 var _24=$.fn.timespinner.methods[_22];
 if(_24){
@@ -147,8 +147,8 @@ tt.push(_2e(_2c.getSeconds()));
 return tt.join(_2d.separator);
 function _2e(_2f){
 return (_2f<10?"0":"")+_2f;
-};
-},parser:function(s){
+}
+    },parser:function(s){
 var _30=$(this).timespinner("options");
 var _31=_32(s);
 if(_31){
@@ -168,8 +168,8 @@ return null;
 }
 var tt=s.split(_30.separator);
 return new Date(1900,0,0,parseInt(tt[0],10)||0,parseInt(tt[1],10)||0,parseInt(tt[2],10)||0);
-};
-if(!s){
+}
+        if(!s){
 return null;
 }
 var tt=s.split(_30.separator);
