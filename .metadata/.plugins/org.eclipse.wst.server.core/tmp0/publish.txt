@@ -1,4 +1,0 @@
-#Tomcat publish data
-#Sun Feb 25 19:24:15 CST 2018
-org.eclipse.jst.j2ee.server\:taotao-manage-mapper=WEB-INF/lib/taotao-manage-mapper-1.0.0.jar
-org.eclipse.jst.j2ee.server\:taotao-manage-service=WEB-INF/lib/taotao-manage-service-1.0.0.jar
